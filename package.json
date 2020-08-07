@@ -1,0 +1,31 @@
+{
+  "name": "store-git",
+  "version": "1.0.0",
+  "description": "Store Git GitHub Action",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyd2019/store-git.git"
+  },
+  "scripts": {
+    "pkg": "ncc build main.js -m -o ./",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Tags"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremyd2019/store-git/issues"
+  },
+  "homepage": "https://github.com/jeremyd2019/store-git",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^7.6.0"
+  }
+}
