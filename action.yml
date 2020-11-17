@@ -1,0 +1,21 @@
+name: 'Store Git'
+description: 'Store a value into a git ref pointing to a blob'
+branding:
+  color: purple
+  icon: tag
+inputs:
+  action:
+    description: 'What this action should do, ''store'' or ''retrieve'''
+    required: true
+  name:
+    description: 'name of ref to create or update'
+    required: true
+  value:
+    description: 'value to set'
+outputs:
+  value:
+    description: 'value retrieved'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
